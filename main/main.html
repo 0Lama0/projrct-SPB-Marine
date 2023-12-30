@@ -234,7 +234,14 @@
             <p>Вы можете связаться с нами по номеру телефона:
                 <a href="tel: +79046159115" class="number"> + 7 (904) 615-91-15</a> </p>
             <p>Или же ведите Ваш номер телефона для обратной связи</p>
-            <input type="text" id="phoneNumber" placeholder="Номер телефона">
+            <input 
+            type="text" 
+            id="phoneNumber" 
+            placeholder="Номер телефона"
+            minlength="7"
+            maxlength="11"
+            pattern="/^\d+$/"
+            required>
             <button id="submitBtn">Отправить</button>
         </div>
     </div>
